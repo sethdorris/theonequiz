@@ -36,7 +36,8 @@ http-server
   ````function jimmy(callback) {
     console.log("hi man");
     callback.call();
-  };````**
+  };`
+  ```
 
 ## Functions and operators
 
