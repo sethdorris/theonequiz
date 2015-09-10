@@ -33,7 +33,7 @@ http-server
 
   **Student answer: A callback is basically a function that is passed as an argument to another function and executes after function1 has executed and called it. Example:**
 
-  ````
+  ````js
   function jimmy(callback) {
     console.log("hi man");
     callback.call();
@@ -75,7 +75,7 @@ http-server
 1. Provide a simple example of the syntax for handling a Promise.
   **Student answer:**  
 
-````
+````js
   var deferred = q.defer();
 
   var ajaxCall = function() {
