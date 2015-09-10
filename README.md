@@ -83,7 +83,7 @@ http-server
       url: "someURL.json",
       method: "GET"
     }).done(function(data) {
-      deferred = resolve.data
+      deferred.resolve(data)
     });
   }
 
