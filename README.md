@@ -82,9 +82,10 @@ http-server
     $.ajax({
       url: "someURL.json",
       method: "GET"
-    .done(function(data) {
+    }).done(function(data) {
       deferred = resolve.data
     });
+  }
 
     ajaxCall()
     .then(function(data){
