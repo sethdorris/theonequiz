@@ -31,7 +31,7 @@ http-server
   **Student answer: Hoisting is the method by which JavaScript parses variables, meaning, wherever a variable is declared, JavaScript will hoist that variable to the very top of scope in which it is declared.**
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: A callback is basically a function that is passed as an argument to another function and executes after function1 has executed and called it. Example:
+  **Student answer: A callback is basically a function that is passed as an argument to another function and executes after function1 has executed and called it. Example:**
 
   ````
   function jimmy(callback) {
