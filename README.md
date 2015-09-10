@@ -33,10 +33,11 @@ http-server
 
   **Student answer: A callback is basically a function that is passed as an argument to another function and executes after function1 has executed and called it. Example:
 
-  function jimmy(callback) {
+  ````function jimmy(callback) {
     console.log("hi man");
     callback.call();
-  };**
+  };````
+  **
 
 ## Functions and operators
 
