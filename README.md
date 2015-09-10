@@ -97,7 +97,7 @@ http-server
 
 What gets logged to the console when the following code executes? Explain why.
 
-**Student answer:  42 gets logged to the console because the call for the function that provides answer is made in the global namespace, all other function calls are references to another function within a function.... INCEPTION **
+**Student answer:  42 gets logged to the console because the call for the function that provides answer is made in the global namespace, all other function calls are references to another function within a function.... INCEPTION**
 
 ```
 var answer = "42";
