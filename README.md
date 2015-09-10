@@ -73,7 +73,10 @@ http-server
   **Student answer: To clean up the code from all of the callback functions, so that we didn't have the inception of AJAX calls.. an ajax call within an ajax call within an ajax call.**
 
 1. Provide a simple example of the syntax for handling a Promise.
-  **Student answer:  var deferred = q.defer();
+  **Student answer:**  
+
+````
+  var deferred = q.defer();
 
   var ajaxCall = function() {
     $.ajax({
@@ -86,7 +89,8 @@ http-server
     ajaxCall()
     .then(function(data){
       console.log(data)
-    })**
+    })
+````
 
 ## Scope and this
 
