@@ -1,0 +1,31 @@
+li:first-of-type {
+	font-size: 16pt;
+}
+
+li {
+	display: inline;
+}
+
+section:nth-child(2n+1) {
+	border: 1px solid black;
+}
+
+li:nth-child(2n+2) {
+	background: lime;
+}
+
+section:nth-child(2) > aside:first-of-type {
+	color: blue;
+}
+
+div:first-of-type {
+	float: right;
+}
+
+div:nth-child(3) {
+	float: left;
+}
+
+div:nth-child(4) {
+	clear: both;
+}

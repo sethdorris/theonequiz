@@ -28,10 +28,15 @@ http-server
 ## JavaScript concepts
 1. Explain what hoisting is. Provide your answer below.
 
-  **Student answer: **
+  **Student answer: Hoisting is the method by which JavaScript parses variables, meaning, wherever a variable is declared, JavaScript will hoist that variable to the very top of scope in which it is declared.**
 1. What is a callback? Why do we use them in JavaScript? Provide your answer, and code a simple example below.
 
-  **Student answer: **
+  **Student answer: A callback is basically a function that is passed as an argument to another function and executes after function1 has executed and called it. Example:
+
+  function jimmy(callback) {
+    console.log("hi man");
+    callback.call();
+  };**
 
 ## Functions and operators
 
@@ -60,19 +65,32 @@ http-server
 
 1. Write a function named `getAnimals` that uses the jQuery `ajax` method to retrieve the `data/animals.json` file. When you execute the functions, it should just log *just the array* of animals to the console when the async is complete. Make sure you provide a prompt of "animals" when logging the array.
 1. What are the four HTTP verbs that you can use in an XHR that correspond to the CRUD actions (create, read, update, delete)?
-  **Student answer:**
+  **Student answer: GET, POST, UPDATE, DELETE**
 
 1. Why did we use Promises when dealing with asynchronous XHR calls?
-  **Student answer:**
+  **Student answer: To clean up the code from all of the callback functions, so that we didn't have the inception of AJAX calls.. an ajax call within an ajax call within an ajax call.**
 
 1. Provide a simple example of the syntax for handling a Promise.
-  **Student answer:**
+  **Student answer:  var deferred = q.defer();
+
+  var ajaxCall = function() {
+    $.ajax({
+      url: "someURL.json",
+      method: "GET"
+    .done(function(data) {
+      deferred = resolve.data
+    });
+
+    ajaxCall()
+    .then(function(data){
+      console.log(data)
+    })**
 
 ## Scope and this
 
 What gets logged to the console when the following code executes? Explain why.
 
-**Student answer: **
+**Student answer:  42 gets logged to the console because the call for the function that provides answer is made in the global namespace, all other function calls are references to another function within a function.... INCEPTION **
 
 ```
 var answer = "42";
