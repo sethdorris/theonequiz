@@ -25,9 +25,15 @@ function subtract(int1, int2) {
 console.log("Do Math Add of 10 and 5: ", doMath(10, 5, add));
 console.log("Do Math Subtract of 12 and 4: ", doMath(12, 4, subtract));
 
+Planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+
+
 function sortedPlanets(array) {
 	return array.sort();
-}
+};
+
+Planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"];
+
 
 function reversedPlanets(array) {
 	var reversed;
@@ -40,7 +46,7 @@ function reversedPlanets(array) {
 		planets.push(array[i])
 	}
 	return planets;
-}
+};
 
 console.log("Sorted Planets: ", sortedPlanets(Planets));
 console.log("Reversed Planets: ", reversedPlanets(Planets));
@@ -54,7 +60,7 @@ function longPlanets(array) {
 	  };
 	} 
 	return newArray
-}
+};
 
 console.log("long planets: ", longPlanets(Planets));
 
